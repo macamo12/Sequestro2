@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.taskbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links-esquerda {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.links-esquerda li {
+    margin-right: 20px;
+}
+
+.links-esquerda a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.links-direita {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.links-direita li {
+    margin-left: 20px;
+}
+
+.links-direita a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.taskbar a:hover {
+    color: #ccc;
+}
+
+h1{
+    margin-top: 20px;
+    text-align: center;
+}
