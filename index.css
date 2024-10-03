@@ -1,4 +1,3 @@
-/* Global Styles */
 
 * {
     box-sizing: border-box;
@@ -6,131 +5,40 @@
     padding: 0;
   }
   
-  body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-  
-    color: #333;
-    background-color: #f9f9f9;
-   
-  }
-  
-  /* Header Styles */
-  
-  .taskbar {
+ .taskbar {
     background-color: #333;
     color: #fff;
-    padding: 1em;
-    text-align: center;
-  }
-  
-  .taskbar .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-  }
-  
-  .taskbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 16px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
   }
   
-  .taskbar li {
-    margin-right: 20px;
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: crimson;
   }
   
-  .taskbar a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Content Styles */
-  
-  #conteiner {
-    max-width: 800px;
-   
-    background-color: #fff;
-    
-  }
-  
-  #conteiner h1 {
-    font-size: 2em;
-    margin-bottom: 0.5em;
-  }
-  
-  #conteiner h2 {
-    font-size: 1.5em;
-    margin-bottom: 0.5em;
-  }
-  
-  #conteiner h3 {
-    font-size: 1.2em;
-    margin-bottom: 0.5em;
-  }
-  
-  #conteiner p {
-    margin-bottom: 1em;
-  }
-  
-  #conteiner ul {
+  .links {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    display: flex;
   }
   
-  #conteiner li {
-    margin-bottom: 10px;
-  }
-  
-  /* Section Styles */
-  
-  #contexto {
-    background-color: #f7f7f7;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  #fatores {
-    background-color: #f7f7f7;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  #impacto {
-    background-color: #f7f7f7;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  #conclusao {
-    background-color: #f7f7f7;
-    padding: 20px;
-    margin-bottom: 20px;
-  }
-  
-  /* Footer Styles */
-  
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1em;
-    text-align: center;
-   
+  .links li {
+    margin-left: 20px;
   }
 
-  
-  .taskbar a {
+  li a:hover{
+ color: grey;
+  }
+
+  li a{
+    color:#fff;
     text-decoration: none;
-  }
-
-  .logo{
-    background-color: brown;
-   margin-top: 20px;
-  } 
-
-  a:hover{
-    color: red;
   }
