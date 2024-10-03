@@ -1,54 +1,137 @@
-*{
-    padding: 0;
-    margin:0;
+/* Global Styles */
+
+* {
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-.taskbar {
-    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  
     color: #333;
+    background-color: #f9f9f9;
+    margin:0;
+  }
+  
+  /* Header Styles */
+  
+  .taskbar {
+    background-color: #333;
+    color: #fff;
     padding: 1em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
+    text-align: center;
+  }
+  
+  .taskbar .logo {
+    font-size: 1.5em;
     font-weight: bold;
-    margin-right: 20px;
-}
-
-.links {
+    margin-bottom: 0.5em;
+  }
+  
+  .taskbar ul {
     list-style: none;
     margin: 0;
     padding: 0;
     display: flex;
-}
-
-.links li {
-    margin-left: 20px;
-}
-
-.links a {
-    color: #333;
+    justify-content: space-between;
+  }
+  
+  .taskbar li {
+    margin-right: 20px;
+  }
+  
+  .taskbar a {
+    color: #fff;
     text-decoration: none;
-}
-
-.links a:hover {
-    color: #00698f;
-}
-
-h1{
-
-    margin-top: 20px;
+  }
+  
+  /* Content Styles */
+  
+  #conteiner {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #conteiner h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+  }
+  
+  #conteiner h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  
+  #conteiner h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+  }
+  
+  #conteiner p {
+    margin-bottom: 1em;
+  }
+  
+  #conteiner ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #conteiner li {
+    margin-bottom: 10px;
+  }
+  
+  /* Section Styles */
+  
+  #contexto {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #fatores {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #impacto {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  #conclusao {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Footer Styles */
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
     text-align: center;
-    color: #333333;
-    font-family: 'Arial', sans-serif;
+    clear: both;
+  }
 
+  
+  .taskbar a {
+    text-decoration: none;
+  }
 
-}
-#contecto{
-    text-align: right;
-    text-justify:distribute;
-}
+  .logo{
+    background-color: brown;
+   margin-top: 20px;
+  } 
+
+  a:hover{
+    color: red;
+  }
