@@ -3,6 +3,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   
+   
   }
   
  .taskbar {
@@ -17,6 +19,8 @@
     margin-bottom: 0px;
     margin-right: 0px;
     margin-left: 0px;
+    width: 100%;
+    height: 100%;
   }
   
   .logo {
@@ -34,11 +38,11 @@
     margin-left: 20px;
   }
 
-  li a:hover{
+ .taskbar li a:hover{
  color: grey;
   }
 
-  li a{
+ .taskbar li a{
     color:#fff;
     text-decoration: none;
   }
@@ -51,6 +55,30 @@
     font-weight: bold;
 
   }
+
+  #menu li {
+    margin-top: 0px;
+    text-align: left;
+    font-size:20px;
+    list-style: none;
+    margin-left: 20px;
+
+   
+  }
+
+  #menu li a{
+    color: black;
+    text-decoration: none;
+  }
+  #menu {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+   
+
+  /*footer */
 
   .footer {
     background-color: #333;
@@ -101,4 +129,3 @@
   .footer p {
     margin-bottom: 0;
   }
-  
