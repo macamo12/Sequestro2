@@ -12,7 +12,7 @@
   
     color: #333;
     background-color: #f9f9f9;
-    margin:0;
+   
   }
   
   /* Header Styles */
@@ -51,10 +51,9 @@
   
   #conteiner {
     max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+   
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
   }
   
   #conteiner h1 {
@@ -119,7 +118,7 @@
     color: #fff;
     padding: 1em;
     text-align: center;
-    clear: both;
+   
   }
 
   
