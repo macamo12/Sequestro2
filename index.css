@@ -32,6 +32,10 @@
   .links {
     list-style: none;
     display: flex;
+    
+  }
+  #menu{
+    border-radius: 15px;
   }
   
   .links li {
@@ -49,10 +53,13 @@
 
   #header{
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
-    color: rgb(151, 138, 138);
+    color: white;
     font-size:20px;
     font-weight: bold;
+    border-radius: 15px;
+    background-color: grey;
 
   }
 
@@ -61,7 +68,7 @@
     text-align: left;
     font-size:20px;
     list-style: none;
-    margin-left: 20px;
+    margin-left: 0px;
 
    
   }
@@ -71,13 +78,70 @@
     text-decoration: none;
   }
   #menu {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px; /* Arredondar as bordas */
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    background-color: #ccc;
   }
-   
 
+  #menu li a:hover{
+    color: white;
+  }
+
+  #contexto ,#fatores, #impacto, #conclusao{
+    background-color: #ccc;
+    padding: 0px;
+    margin: 20px;
+  }
+  #contexto{
+    border-radius: 15px; /* Arredondar as bordas */
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+    #contexto p{
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0px;
+    }
+    #fatores{
+        border-radius: 15px; /* Arredondar as bordas */
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+    #fatores p{
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0px;
+    }
+        #fatores ul li{
+          margin-left: 10px;
+        }
+    
+    #impacto{
+        border-radius: 15px; /* Arredondar as bordas */
+        padding: 20px;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+    }
+    #impacto p{
+        font-size: 20px;
+        text-align: justify;
+        font-family: 'Times New Roman', Times, serif; 
+    }
+  
   /*footer */
 
   .footer {
