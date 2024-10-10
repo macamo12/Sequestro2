@@ -3,15 +3,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-   
-   
+   font-family: sans-serif;   
   }
+
+ 
 
   .conteiner{
     margin-left: 20%;
     margin-right: 20%;
-    justify-content: center;
-    background-color: aliceblue;
+    justify-content: center;  
+    display: flex;
+    flex-direction:column;
+    padding: 20px;
   }
 
   h3{
@@ -19,37 +22,29 @@
   }
   
  .taskbar {
-    background-color: #333;
-    color: #fff;
+    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin: 16px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin: 16px;   
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-  }
+     
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: crimson;
-  }
+ }
+ 
   
   .links {
     display: flex;
     list-style: none;}
-  #menu{
-    border-radius: 15px;
-  }
+  
   
   .links li {
-    margin-left: 20px;
+    margin-left: 50%;
+    padding: auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
   }
 
  .taskbar li a:hover{
@@ -57,7 +52,7 @@
   }
 
  .taskbar li a{
-    color:#fff;
+    color:black;
     text-decoration: none;
   }
 
@@ -65,74 +60,77 @@
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
-    color: white;
     font-size:20px;
-    font-weight: bold;
-    border-radius: 20px;
-    background-color: grey;
 
   }
 
   #menu li {
-    margin-top: 0px;
-    text-align: left;
+    margin-top: 0px; 
     font-size:20px;
     list-style: none;
     margin-left: 0px;
+  
 
    
   }
+  .box{
+    display:flex;
+    flex-direction: row;
+    
+   }
+  
+   .box img{
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.5);
+   }
+   .box li{
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-around;
+   } 
 
   #menu li a{
     color: black;
     text-decoration: none;
+    margin-bottom: 10px;
+    justify-content: end;
+    margin-top: 20px;
   }
   #menu {
-    border-radius: 15px; /* Arredondar as bordas */
-    padding: 20px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
-    background-color: #ccc;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin-right: 40%;
+
   }
+  
 
   #menu li a:hover{
     color: white;
   }
 
   #contexto ,#fatores, #impacto, #conclusao{
-    background-color: #ccc;
+
     padding: 0px;
     margin: 20px;
   }
   #contexto{
-    border-radius: 15px; /* Arredondar as bordas */
     padding: 20px;
     margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-}
-    #contexto p{
-        font-size: 20px;
-        text-align: justify;
-        font-family: 'Times New Roman', Times, serif;
-        margin: 0px;
-        margin-bottom: 10px;
-    }
+  }
+
+  
     #fatores{
-        border-radius: 15px; /* Arredondar as bordas */
         padding: 20px;
         margin: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
+
+       
     }
     #fatores, p, li{
-        font-size: 20px;
-        text-align: justify;
-        font-family: 'Times New Roman', Times, serif;
+
         margin-bottom: 10px;
         text-size-adjust: 10px; 
     }
@@ -147,19 +145,15 @@
    
     
     #impacto{
-        border-radius: 15px; /* Arredondar as bordas */
+
+       
         padding: 20px;
         margin: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: flex;
-        flex-direction: column;
+
+   
     }
-    #impacto p{
-        font-size: 20px;
-        text-align: justify;
-        font-family: 'Times New Roman', Times, serif; 
-        text-size-adjust: 10px;
-        margin-left: 10px;
+    #impacto p, li{
+        margin-bottom: 10px;
     }
    #impacto li{
     margin-left: 25px;
@@ -170,18 +164,17 @@
 }
 
 #conclusao{
-  border-radius: 15px; /* Arredondar as bordas */
+
+
   padding: 20px;
-  margin: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
+    margin: 20px;
+
+ 
 }
 #conclusao p{
-  font-size: 20px;
-  text-align: justify;
-  font-family: 'Times New Roman', Times, serif; 
+  margin-bottom: 10px;
 }
+
   /*footer */
 
   .footer {
@@ -207,14 +200,38 @@
     color: white;
   }
 
-  .footer .row a:visited{
-    color:wheat;
-  }
-
-  .row h4{
+  .row h3{
     text-align: left;
     padding: 10px;
     padding-left: 0px;
   }
   
+.cntt{
+  text-align: right;
+  padding: 10px;
   
+}
+
+.cntt li{
+  text-align: right;
+  margin-top: 20px;
+}
+
+
+.footer .row {
+
+  background-color: #34495e;
+  padding: 20px;
+  
+}
+.footer .cntt {
+
+  
+  background-color: #6168a3;
+  padding: 20px;
+}
+.footer h2 {
+  margin-top: 0;
+}
+  
+
