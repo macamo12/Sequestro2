@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #4CAF50;
+  --hover-color: whitesmoke;
+  --text-color: #fff;
+  --background-color: #000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,33 +12,45 @@
   font-family: "Poppins", sans-serif;
 }
 
+
 .menu {
- padding-inline: 100px;
- height: 8vh;
- width: 100vw;
+  padding-inline: 100px;
+  height: 8vh;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   opacity: 0.3;
-  background-color: #000;
+  background-color:rgb(44, 11, 18)
 }
 
 .menu h1 {
-  color: red;
+  color: whitesmoke;
 }
+
 .navigation {
   display: flex;
   gap: 50px;
 }
+
 .navigation a {
   text-decoration: none;
-  color: #fff;
   font-weight: 700;
   font-size: 18px;
+  animation: rainbow 5s infinite;
 }
-.navigation a:hover{
+
+ @keyframes rainbow  {
+ 100% { color:#FF0000;}
+100% {color: #00FF00;}
+100% {color: #ffff00;}
+42% {color: #ff00ff;}
+90% {color:white;}
+ }
+  
+.navigation a:hover {
   text-decoration: underline;
 }
 
@@ -39,8 +58,9 @@
   height: 100vh;
   border: 1px solid red;
 }
+
 #section1 {
-  background-image: url("./imagens/sequestro2.jpg");
+  background-image: url("./imagens/nova.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -53,12 +73,12 @@
 #section1 p {
   margin-bottom: 10px;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 #section1 h1 {
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 #section1 .content {
@@ -67,57 +87,88 @@
   align-items: center;
 }
 
-
-#section2  #missao{
-text-align: center;
-justify-content:center;
-border: 1px solid red;
-background-color: white;
-border-radius: 8px;
-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-width: 100%;
-margin: 10px;
-padding: 15px;
+#section2 #missao {
+  text-align: center;
+  justify-content: center;
+  border: 1px solid red;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin: 10px;
+  padding: 15px;
 }
-#section2  #missao h1{
+
+#section2 #missao h1 {
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-#section2  #missao p{
-  font-size: 24px;  
+
+#section2 #missao p {
+  font-size: 24px;
 }
 
-.section-containern #section-image-container {
-display: flex; /* Exibe as seções de imagem lado a lado */
-flex-direction: row;
-justify-content: space-between; /* Espaçamento entre as divs */
-
+.section-container #section-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
+
 .section-image {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  padding: 15px;
   text-align: center;
-  width: 20%; /* Largura das divs */
+  width: 30%;
 }
+
 .section-image img {
-  width: 100%; /* Faz com que as imagens ocupem toda a largura da div */
+  width: 100%;
   height: auto; /* Mantém a proporção da imagem */
-  border-radius: 5px; /* Bordas arredondadas nas imagens */
+  border-radius: 10px;
 }
+.section-image:hover img{
+  transform: scale(1.04); /*aumenta a imagem 10% ao passar o mouse*/
+}
+
 button {
-  background-color: #4CAF50; /* Cor de fundo do botão */
-  color: white; /* Cor do texto */
-  border: none; /* Remove a borda padrão */
-  padding: 10px 15px; /* Espaçamento interno do botão */
-  border-radius: 5px; /* Bordas arredondadas do botão */
-  cursor: pointer; /* Cursor de mão ao passar sobre o botão */
-  font-size: 16px; /* Tamanho da fonte do botão */
-  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.8s;
 }
+
 button:hover {
-  background-color: #45a049; /* Cor do botão ao passar o mouse */
+  background-color: var(--hover-color);
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+.section-image p {
+  margin-bottom: 18px;
+  padding: 16px;
+  justify-content: center;
+}
+
+.section-image img:hover {
+  opacity: 0.8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .menu {
+      padding-inline: 20px;
+  }
+  .section-image {
+      width: 90%;
+  }
 }
