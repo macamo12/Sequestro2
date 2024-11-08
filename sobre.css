@@ -1,0 +1,157 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  
+  .menu {
+    padding-inline: 100px;
+    height: 8vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    top: 0;
+
+    background-color:white
+  }
+  
+  .menu h1 {
+    color:rgb(64, 48, 104);
+  }
+  
+  .navigation {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+  columns: blue;
+  }
+  
+  body{
+    top:30%;
+  }
+    
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  .section-container {
+    height: 100vh;
+    width: auto;
+  
+  }
+  body{
+    background-image: linear-gradient(rgb(37, 87, 87),rgb(99, 99, 70));
+  }
+
+  .section-content{
+    top:50%;
+    margin-top: 20%;
+  }
+  
+
+
+  .section-content{
+    background-image: linear-gradient(white, grey);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+  }
+  .section-content h2{
+    color: rgb(101, 107, 110);;
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .section-content p{
+  
+      color:rgb(8, 88, 126);
+      font-size: 20px;
+      margin-bottom: 15px;
+  
+  }
+  .section-content ul li{
+    color: rgb(8, 88, 126);
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .section-content ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+  footer{
+  background-color: #111;
+  margin-top: 10px;
+}
+
+.footer-container{
+  width:100%;
+  padding: 70px 30px 20px;
+}
+.social-icons{
+  display: flex;
+  justify-content: center;
+
+}
+.social-icons a{
+text-decoration: none;
+padding: 10px;
+background-color: white;
+margin: 10px;
+border-radius: 20%;
+}
+.social-icons a i{
+  font-size: 2em;
+  color: #000;
+  opacity: 0.9;
+}
+.social-icons a:hover i{
+  color: #fff;
+  transition: 0.5s;
+}
+.footer-nav{
+margin: 30px 0;
+
+}
+.footer-nav ul{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.footer-nav ul li a{
+  color: #fff;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-nav ul li a:hover{
+  opacity:1;
+}
+
+.footer-bottom{
+  background-color: black;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-bottom p{
+  color: #fff;
+}

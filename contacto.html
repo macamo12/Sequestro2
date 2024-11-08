@@ -1,73 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nos</title>
-    <link rel="stylesheet" type="text/css" href="sobre.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Contato</title>
+    <link rel="stylesheet" href="contacto.css">
+    
 
 </head>
 <body>
-    
     <div class="menu">
-        <h1>Mocambique</h1>
+        <h1>Sequestros Em Mocambique</h1>
         <nav class="navigation">
           <a href="Home-Page.html">Início</a>
           <a href="sobre.html">Sobre</a>
           <a href="cronologia.html">Casos</a>
-          <a href="Contacto.html">Contate-nos</a>
+          <a href="contacto.html">Contate-nos</a>
         </nav>
+      </div>
+
+      
+    <div class="contact-container">
+        <h2>Contato</h2>
+        <form id="contactForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Assunto:</label>
+            <input type="text" id="subject" name="subject" required>
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+            <div id="responseMessage"></div>
+        </form>
     </div>
 
-
-<section class="section-content">
-
-    <h2>Nossa Missão</h2>
-    <p>Nosso objetivo é aumentar a conscientização sobre sequestros e fornecer recursos que ajudem a prevenir esses crimes.</p>
-
-</section>
-
-<section class="section-content">
- 
-    <h2>História</h2>
-    <p>Fundado em 2024, nosso site surgiu da necessidade de informar e apoiar aqueles afetados por sequestros.</p>
-
-</section>
-
-<section class="section-content">
-  
-          <h2>Nossos Objetivos</h2>
-    <ul>
-        <li>Educar o público sobre as estatísticas de sequestros.</li>
-        <li>Oferecer dicas de segurança.</li>
-        <li>Conectar vítimas com serviços de apoio.</li>
-    </ul>
-
-</section>
-
-<section class="section-content">
-    
-    <h2>Como Ajudar</h2>
-    <p>Você pode ajudar compartilhando nossas informações, fazendo as denuncias ou fazendo uma doação.</p>
-
-</section>
-
-<section class="section-content">
-  
-    <h2>Contato</h2>
-    <p>Para mais informações, entre em contato conosco pelo link: <a href="contacto.html">contacto</a></p>
-
-</section>
-
-<section class="section-content">
- 
-    <h2>Aviso Legal</h2>
-    <p>O conteúdo deste site é informativo e não substitui a orientação profissional.</p>
-
-</section>
 </body>
 
 <footer>
