@@ -16,11 +16,14 @@
   justify-content: space-between;
   align-items: center;
  background-color: blueviolet;
+
+ position: fixed;
   top: 0;
-  
+
+  z-index: 1;
 }
 
-.menu h1 {
+.menu h3 {
   color: white;
 }
 
@@ -46,7 +49,7 @@
 
 .section-container {
   height: 100vh;
-  width: auto;
+  width: 100vw;
   border: 1px solid black;
 
 }
@@ -107,7 +110,7 @@
 
 .section-container #section-image-container {
   display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -225,15 +228,13 @@ button a {
   height: auto;
 }
 #section4{
-display: inline-block;
+  display: inline-block;
 }
 /*section5*/
 .content{
   display: flex;
-  ;
   align-items: center;
-  flex-direction: row;
-  align-items: right;
+  justify-content: center;
   gap: 20px;
  border-radius: 2px;
 
@@ -261,7 +262,9 @@ display: inline-block;
 
 /*section6*/
 
+
 #section6 .content {
+  border-top:1px solid black ;
   margin: 10px;
   padding: 10px;
   align-items: center;
@@ -342,3 +345,6 @@ margin: 30px 0;
 .footer-bottom p{
   color: #fff;
 }
+
+
+/*Section 7 */
